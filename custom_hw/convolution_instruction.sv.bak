@@ -1,0 +1,14 @@
+module gcd_ci(
+	input clk,                     // clock
+	input reset,                 // reset, active low
+	input clk_en,                      // clock enable, active high
+	input [31:0] s0_dataa,     // input A
+	input [31:0] s1_datab,     // input B
+	output reg [31:0] s2_result, // output
+	input start,                   // start signal 
+	output reg done                // operation is completed
+);
+
+
+
+endmodule
