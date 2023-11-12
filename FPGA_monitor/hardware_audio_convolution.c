@@ -8,6 +8,7 @@ volatile int16_t * const AUDIO_LEFTDATA = (uint32_t *) 0xFF203048;  //audio samp
 volatile int16_t * const AUDIO_RIGHTDATA = (uint32_t *) 0xFF20304C;
 
 //custom instruction
+#define CONVOL_CI(input1, input2) __builtin_custom_inii(0, (input1), (input2))
 
 int main(){
     uint16_t sample_left, sample_right;
@@ -21,7 +22,7 @@ int main(){
 
         // If there's data in the right read buffer and space in the write buffer
         if((fifo_space & 0x000000FF) > 64 && ((fifo_space & 0x00FF0000) >> 16) > 64){ 
-            *AUDIO_RIGHTDATA = *AUDIO_RIGHTDATA;
+            *AUDIO_RIGHTDATA = CONVOL_CI(*AUDIO_RIGHTDATA, 0);
         }
 
         // If there's data in the left read buffer and space in the write buffer
