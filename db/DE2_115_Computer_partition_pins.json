@@ -1308,11 +1308,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY[1]",
+					"name" : "SW[1]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[1]",
+					"name" : "KEY[1]",
 					"strict" : false
 				},
 				{
@@ -1332,11 +1332,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY[3]",
+					"name" : "SW[3]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[3]",
+					"name" : "KEY[3]",
 					"strict" : false
 				},
 				{

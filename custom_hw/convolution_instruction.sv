@@ -10,10 +10,20 @@ module gcd_ci(
 );
 	
 	logic [15:0] fifo[0:31] = '{default:16'b0};
+
+	initial begin
+		done = 0;
+	end
 	
 	always @(clk_en) begin
 		if(clk_en) begin
-			fifo = '{dataa[15:0], fifo[0:30]};
+            		for (int i = 1; i <= 31; i++) begin
+                		fifo[i] = fifo[i - 1];
+            		end
+            		fifo[0] = dataa[15:0];
+			
+			result[15:0] = fifo[31];
+			
 			done = 1;
 		end
 		else begin
