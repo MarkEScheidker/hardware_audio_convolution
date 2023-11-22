@@ -1292,14 +1292,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "OTG_INT[0]",
-					"strict" : false
-				},
-				{
-					"name" : "OTG_INT[1]",
-					"strict" : false
-				},
-				{
 					"name" : "KEY[2]",
 					"strict" : false
 				},
@@ -1340,7 +1332,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY[0]",
+					"name" : "OTG_INT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OTG_INT[1]",
 					"strict" : false
 				},
 				{
@@ -1373,6 +1369,10 @@
 				},
 				{
 					"name" : "SW[11]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
 					"strict" : false
 				},
 				{

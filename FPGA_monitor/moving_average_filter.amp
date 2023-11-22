@@ -12,7 +12,7 @@
     <program>
         <type>C Program</type>
         <source_files>
-            <source_file filepath="true">hardware_audio_convolution.c</source_file>
+            <source_file filepath="true">moving_average_filter.c</source_file>
             <source_file filepath="true">amp/lib/src/niosII_jtag_uart.c</source_file>
         </source_files>
         <options>

@@ -28,17 +28,17 @@ OCFLAGS		:= -O srec
 
 # Files
 HDRS		:=
-SRCS		:= hardware_audio_convolution.c amp/lib/src/niosII_jtag_uart.c
+SRCS		:= moving_average_filter.c amp/lib/src/niosII_jtag_uart.c
 OBJS		:= $(patsubst %, %.o, $(SRCS))
 
 # Targets
-COMPILE: hardware_audio_convolution.srec
+COMPILE: moving_average_filter.srec
 
-hardware_audio_convolution.srec: hardware_audio_convolution.elf
+moving_average_filter.srec: moving_average_filter.elf
 	$(RM) $@
 	$(OC) $(OCFLAGS) $< $@
 
-hardware_audio_convolution.elf: $(OBJS)
+moving_average_filter.elf: $(OBJS)
 	$(RM) $@
 	$(CC) $(LDFLAGS) $(OBJS) -o $@
 
@@ -51,5 +51,5 @@ hardware_audio_convolution.elf: $(OBJS)
 	$(AS) $(ASFLAGS) $< -o $@
 
 CLEAN: 
-	$(RM) hardware_audio_convolution.srec hardware_audio_convolution.elf $(OBJS)
+	$(RM) moving_average_filter.srec moving_average_filter.elf $(OBJS)
 

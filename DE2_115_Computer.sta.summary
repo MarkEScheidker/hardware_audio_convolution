@@ -11,39 +11,39 @@ Slack : -1.616
 TNS   : -24.506
 
 Type  : Slow 1200mV 85C Model Setup 'TD_CLK27'
-Slack : 31.681
+Slack : 32.185
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
-Slack : 41.600
+Slack : 40.615
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
-Slack : 0.366
+Slack : 0.344
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'TD_CLK27'
-Slack : 0.393
+Slack : 0.404
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.425
+Slack : 0.443
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
-Slack : 12.336
+Slack : 11.078
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 45.886
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
-Slack : 1.149
+Slack : 47.780
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
-Slack : 1.666
+Slack : 1.122
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
+Slack : 1.152
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_dram'
@@ -51,7 +51,7 @@ Slack : 5.519
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
-Slack : 9.542
+Slack : 9.541
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
@@ -63,7 +63,7 @@ Slack : 9.911
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'TD_CLK27'
-Slack : 18.165
+Slack : 18.164
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_vga'
@@ -71,7 +71,7 @@ Slack : 35.233
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.500
+Slack : 49.487
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'n/a'
@@ -83,39 +83,39 @@ Slack : -1.401
 TNS   : -21.159
 
 Type  : Slow 1200mV 0C Model Setup 'TD_CLK27'
-Slack : 31.913
+Slack : 32.500
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
-Slack : 42.166
+Slack : 41.198
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
-Slack : 0.350
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.375
+Slack : 0.326
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'TD_CLK27'
-Slack : 0.377
+Slack : 0.389
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.392
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
-Slack : 12.949
+Slack : 11.774
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 46.248
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
-Slack : 1.063
+Slack : 48.071
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
-Slack : 1.509
+Slack : 1.026
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
+Slack : 1.065
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_dram'
@@ -123,7 +123,7 @@ Slack : 5.519
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
-Slack : 9.574
+Slack : 9.573
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
@@ -135,7 +135,7 @@ Slack : 9.912
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'TD_CLK27'
-Slack : 18.160
+Slack : 18.158
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_vga'
@@ -143,7 +143,7 @@ Slack : 35.233
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.380
+Slack : 49.358
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'n/a'
@@ -155,39 +155,39 @@ Slack : -1.342
 TNS   : -20.454
 
 Type  : Fast 1200mV 0C Model Setup 'TD_CLK27'
-Slack : 34.666
+Slack : 34.972
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
-Slack : 46.653
+Slack : 46.175
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
-Slack : 0.114
+Slack : 0.097
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'TD_CLK27'
-Slack : 0.133
+Slack : 0.135
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.174
+Slack : 0.180
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
-Slack : 16.423
+Slack : 15.897
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 48.423
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
-Slack : 0.486
+Slack : 49.312
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.697
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'The_System|system_pll|sys_pll|PLL_for_DE_Series_Boards|auto_generated|pll1|clk[0]'
+Slack : 0.487
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_dram'
@@ -207,7 +207,7 @@ Slack : 9.946
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'TD_CLK27'
-Slack : 17.725
+Slack : 17.726
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_vga'
@@ -215,7 +215,7 @@ Slack : 35.714
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.298
+Slack : 49.300
 TNS   : 0.000
 
 ------------------------------------------------------------
