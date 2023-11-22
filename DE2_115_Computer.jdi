@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="1b5b01c83e1ad415a127"/>
+    <hash md5_digest_80b="61e114de46e68a3c6c31"/>
   </project>
   <file_info>
     <file device="EP4CE115F29C8" path="DE2_115_Computer_time_limited.sof" usercode="0xFFFFFFFF"/>
@@ -346,7 +346,7 @@
   <sld_infos>
     <sld_info hpath="Computer_System:The_System" name="The_System">
       <assignment_values>
-        <assignment_value text="QSYS_NAME Computer_System HAS_SOPCINFO 1 GENERATION_ID 1700527682"/>
+        <assignment_value text="QSYS_NAME Computer_System HAS_SOPCINFO 1 GENERATION_ID 1700626490"/>
       </assignment_values>
       <parameters/>
     </sld_info>

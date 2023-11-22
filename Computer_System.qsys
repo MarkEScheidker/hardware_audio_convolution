@@ -569,6 +569,14 @@
          type = "int";
       }
    }
+   element moving_average_two_0
+   {
+      datum _sortIndex
+      {
+         value = "36";
+         type = "int";
+      }
+   }
 }
 ]]></parameter>
  <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
@@ -974,7 +982,7 @@
   <parameter name="cpuArchRev" value="1" />
   <parameter name="cpuID" value="0" />
   <parameter name="cpuReset" value="false" />
-  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="nios2_floating_point" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /><slave name="moving_average_0" baseAddress="0" addressSpan="1" clockCycleType="VARIABLE" /></info>]]></parameter>
+  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="nios2_floating_point" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /><slave name="moving_average_0" baseAddress="0" addressSpan="1" clockCycleType="VARIABLE" /><slave name="moving_average_two_0" baseAddress="1" addressSpan="1" clockCycleType="VARIABLE" /></info>]]></parameter>
   <parameter name="customInstSlavesSystemInfo_nios_a" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_b" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_c" value="&lt;info/&gt;" />
@@ -1538,6 +1546,11 @@
  <module
    name="moving_average_0"
    kind="moving_average"
+   version="1.0"
+   enabled="1" />
+ <module
+   name="moving_average_two_0"
+   kind="moving_average_two"
    version="1.0"
    enabled="1" />
  <connection
@@ -2774,6 +2787,15 @@
   <parameter name="CIName" value="moving_average_0" />
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0" />
+ </connection>
+ <connection
+   kind="nios_custom_instruction"
+   version="18.1"
+   start="Nios2.custom_instruction_master"
+   end="moving_average_two_0.nios_custom_instruction_slave">
+  <parameter name="CIName">moving_average_two_0</parameter>
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="1" />
  </connection>
  <connection
    kind="nios_custom_instruction"

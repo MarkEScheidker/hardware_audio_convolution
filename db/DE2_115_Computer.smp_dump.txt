@@ -1,4 +1,18 @@
 
+State Machine - |DE2_115_Computer|Computer_System:The_System|moving_avg_two_ci:moving_average_two_0|state
+Name state.11 state.10 state.01 state.00 
+state.00 0 0 0 0 
+state.01 0 0 1 1 
+state.10 0 1 0 1 
+state.11 1 0 0 1 
+
+State Machine - |DE2_115_Computer|Computer_System:The_System|moving_avg_ci:moving_average_0|state
+Name state.11 state.10 state.01 state.00 
+state.00 0 0 0 0 
+state.01 0 0 1 1 
+state.10 0 1 0 1 
+state.11 1 0 0 1 
+
 State Machine - |DE2_115_Computer|Computer_System:The_System|Computer_System_Video_In_Subsystem:video_in_subsystem|Computer_System_Video_In_Subsystem_Video_In_Clipper:video_in_clipper|altera_up_video_clipper_drop:Clipper_Drop|s_video_clipper_drop
 Name s_video_clipper_drop.STATE_0_WAIT_FOR_START s_video_clipper_drop.STATE_2_ADD_MISSING_PART s_video_clipper_drop.STATE_1_RUN_CLIPPER 
 s_video_clipper_drop.STATE_0_WAIT_FOR_START 0 0 0 

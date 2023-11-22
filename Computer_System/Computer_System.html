@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2023.11.20.18:48:03</td>
+    <td class="l">2023.11.21.22:14:51</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -1756,7 +1756,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <table>
        <tr>
         <td class="parametername">AUTO_GENERATION_ID</td>
-        <td class="parametervalue">1700527682</td>
+        <td class="parametervalue">1700626490</td>
        </tr>
        <tr>
         <td class="parametername">AUTO_UNIQUE_ID</td>
@@ -5003,7 +5003,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_System_PLL">System_PLL</a>
       </td>
       <td class="from">sys_clk&#160;&#160;</td>
-      <td class="main" rowspan="126">Nios2</td>
+      <td class="main" rowspan="129">Nios2</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clk</td>
@@ -5635,6 +5635,22 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td class="from">custom_instruction_master&#160;&#160;</td>
       <td class="neighbor" rowspan="2">
        <a href="#module_moving_average_0">moving_average_0</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;nios_custom_instruction_slave</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">custom_instruction_master&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_moving_average_two_0">moving_average_two_0</a>
       </td>
      </tr>
      <tr>
@@ -6413,7 +6429,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">customInstSlavesSystemInfo</td>
-        <td class="parametervalue">&lt;info&gt;&lt;slave name="moving_average_0" baseAddress="0" addressSpan="1" clockCycleType="VARIABLE" /&gt;&lt;slave name="nios2_floating_point" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /&gt;&lt;/info&gt;</td>
+        <td class="parametervalue">&lt;info&gt;&lt;slave name="moving_average_0" baseAddress="0" addressSpan="1" clockCycleType="VARIABLE" /&gt;&lt;slave name="moving_average_two_0" baseAddress="1" addressSpan="1" clockCycleType="VARIABLE" /&gt;&lt;slave name="nios2_floating_point" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /&gt;&lt;/info&gt;</td>
        </tr>
        <tr>
         <td class="parametername">customInstSlavesSystemInfo_nios_a</td>
@@ -9954,7 +9970,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">timestamp</td>
-        <td class="parametervalue">1700527682</td>
+        <td class="parametervalue">1700626490</td>
        </tr>
        <tr>
         <td class="parametername">deviceFamily</td>
@@ -9979,7 +9995,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">TIMESTAMP</td>
-        <td class="parametervalue">1700527682</td>
+        <td class="parametervalue">1700626490</td>
        </tr>
       </table>
      </td>
@@ -10190,7 +10206,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <table>
        <tr>
         <td class="parametername">AUTO_GENERATION_ID</td>
-        <td class="parametervalue">1700527682</td>
+        <td class="parametervalue">1700626490</td>
        </tr>
        <tr>
         <td class="parametername">AUTO_UNIQUE_ID</td>
@@ -10273,7 +10289,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <table>
        <tr>
         <td class="parametername">AUTO_GENERATION_ID</td>
-        <td class="parametervalue">1700527682</td>
+        <td class="parametervalue">1700626490</td>
        </tr>
        <tr>
         <td class="parametername">AUTO_UNIQUE_ID</td>
@@ -12680,7 +12696,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <table>
        <tr>
         <td class="parametername">AUTO_GENERATION_ID</td>
-        <td class="parametervalue">1700527682</td>
+        <td class="parametervalue">1700626490</td>
        </tr>
        <tr>
         <td class="parametername">AUTO_UNIQUE_ID</td>
@@ -13642,7 +13658,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <table>
        <tr>
         <td class="parametername">AUTO_GENERATION_ID</td>
-        <td class="parametervalue">1700527682</td>
+        <td class="parametervalue">1700626490</td>
        </tr>
        <tr>
         <td class="parametername">AUTO_UNIQUE_ID</td>
@@ -15104,9 +15120,54 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
     </tr>
    </table>
   </div>
+  <a name="module_moving_average_two_0"> </a>
+  <div>
+   <hr/>
+   <h2>moving_average_two_0</h2>moving_average_two v1.0
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Nios2">Nios2</a>
+      </td>
+      <td class="from">custom_instruction_master&#160;&#160;</td>
+      <td class="main" rowspan="2">moving_average_two_0</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;nios_custom_instruction_slave</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">UNKNOWN</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>(none)</td>
+    </tr>
+   </table>
+  </div>
   <table class="blueBar">
    <tr>
-    <td class="l">generation took 0.01 seconds</td>
+    <td class="l">generation took 0.02 seconds</td>
     <td class="r">rendering took 0.16 seconds</td>
    </tr>
   </table>
