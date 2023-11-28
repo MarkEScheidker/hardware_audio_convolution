@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="Computer_System" kind="system" version="18.1" fabric="QSYS">
  <!-- Format version 18.1 625 (Future versions may contain additional information.) -->
- <!-- 2023.11.21.22:16:31 -->
+ <!-- 2023.11.28.00:15:45 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1700626490</value>
+  <value>1701152045</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -862,7 +862,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="AUTO_GENERATION_ID">
    <type>java.lang.Integer</type>
-   <value>1700626490</value>
+   <value>1701152045</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -15631,7 +15631,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="customInstSlavesSystemInfo">
    <type>java.lang.String</type>
-   <value><![CDATA[<info><slave name="moving_average_0" baseAddress="0" addressSpan="1" clockCycleType="VARIABLE" /><slave name="moving_average_two_0" baseAddress="1" addressSpan="1" clockCycleType="VARIABLE" /><slave name="nios2_floating_point" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /></info>]]></value>
+   <value><![CDATA[<info><slave name="moving_avg_0" baseAddress="0" addressSpan="1" clockCycleType="VARIABLE" /><slave name="moving_avg_1" baseAddress="1" addressSpan="1" clockCycleType="VARIABLE" /><slave name="nios2_floating_point" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /></info>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -27505,7 +27505,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1700626490</value>
+   <value>1701152045</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -27525,7 +27525,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1700626490</value>
+   <value>1701152045</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -27541,7 +27541,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1700626490</value>
+   <value>1701152045</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -29552,7 +29552,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="AUTO_GENERATION_ID">
    <type>java.lang.Integer</type>
-   <value>1700626490</value>
+   <value>1701152045</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -31790,7 +31790,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="AUTO_GENERATION_ID">
    <type>java.lang.Integer</type>
-   <value>1700626490</value>
+   <value>1701152045</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -43228,7 +43228,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="AUTO_GENERATION_ID">
    <type>java.lang.Integer</type>
-   <value>1700626490</value>
+   <value>1701152045</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -47979,7 +47979,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="AUTO_GENERATION_ID">
    <type>java.lang.Integer</type>
-   <value>1700626490</value>
+   <value>1701152045</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -54782,10 +54782,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="moving_average_0"
-   kind="moving_average"
+   name="moving_avg_0"
+   kind="moving_avg"
    version="1.0"
-   path="moving_average_0">
+   path="moving_avg_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <parameter name="deviceFamily">
@@ -54944,10 +54944,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="moving_average_two_0"
-   kind="moving_average_two"
+   name="moving_avg_1"
+   kind="moving_avg"
    version="1.0"
-   path="moving_average_two_0">
+   path="moving_avg_1">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <parameter name="deviceFamily">
@@ -57519,9 +57519,9 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <customInstruction>
     <isBridge>false</isBridge>
-    <moduleName>moving_average_0</moduleName>
+    <moduleName>moving_avg_0</moduleName>
     <slaveName>nios_custom_instruction_slave</slaveName>
-    <name>moving_average_0.nios_custom_instruction_slave</name>
+    <name>moving_avg_0.nios_custom_instruction_slave</name>
     <opcodeNumber>0</opcodeNumber>
     <opcodeMnemonic></opcodeMnemonic>
    </customInstruction>
@@ -57985,9 +57985,9 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <customInstruction>
     <isBridge>false</isBridge>
-    <moduleName>moving_average_two_0</moduleName>
+    <moduleName>moving_avg_1</moduleName>
     <slaveName>nios_custom_instruction_slave</slaveName>
-    <name>moving_average_two_0.nios_custom_instruction_slave</name>
+    <name>moving_avg_1.nios_custom_instruction_slave</name>
     <opcodeNumber>0</opcodeNumber>
     <opcodeMnemonic></opcodeMnemonic>
    </customInstruction>
@@ -84217,11 +84217,11 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>ci_slave</endConnectionPoint>
  </connection>
  <connection
-   name="Nios2_custom_instruction_master_multi_slave_translator1.ci_master/moving_average_0.nios_custom_instruction_slave"
+   name="Nios2_custom_instruction_master_multi_slave_translator1.ci_master/moving_avg_0.nios_custom_instruction_slave"
    kind="nios_custom_instruction"
    version="18.1"
    start="Nios2_custom_instruction_master_multi_slave_translator1.ci_master"
-   end="moving_average_0.nios_custom_instruction_slave">
+   end="moving_avg_0.nios_custom_instruction_slave">
   <parameter name="CIName">
    <type>java.lang.String</type>
    <value></value>
@@ -84280,7 +84280,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>Nios2_custom_instruction_master_multi_slave_translator1</startModule>
   <startConnectionPoint>ci_master</startConnectionPoint>
-  <endModule>moving_average_0</endModule>
+  <endModule>moving_avg_0</endModule>
   <endConnectionPoint>nios_custom_instruction_slave</endConnectionPoint>
  </connection>
  <connection
@@ -84351,11 +84351,11 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>ci_slave</endConnectionPoint>
  </connection>
  <connection
-   name="Nios2_custom_instruction_master_multi_slave_translator2.ci_master/moving_average_two_0.nios_custom_instruction_slave"
+   name="Nios2_custom_instruction_master_multi_slave_translator2.ci_master/moving_avg_1.nios_custom_instruction_slave"
    kind="nios_custom_instruction"
    version="18.1"
    start="Nios2_custom_instruction_master_multi_slave_translator2.ci_master"
-   end="moving_average_two_0.nios_custom_instruction_slave">
+   end="moving_avg_1.nios_custom_instruction_slave">
   <parameter name="CIName">
    <type>java.lang.String</type>
    <value></value>
@@ -84414,7 +84414,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>Nios2_custom_instruction_master_multi_slave_translator2</startModule>
   <startConnectionPoint>ci_master</startConnectionPoint>
-  <endModule>moving_average_two_0</endModule>
+  <endModule>moving_avg_1</endModule>
   <endConnectionPoint>nios_custom_instruction_slave</endConnectionPoint>
  </connection>
  <connection
@@ -90040,19 +90040,11 @@ parameters are a RESULT of the module parameters. -->
   <version>18.0</version>
  </plugin>
  <plugin>
-  <instanceCount>1</instanceCount>
-  <name>moving_average</name>
+  <instanceCount>2</instanceCount>
+  <name>moving_avg</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>moving_average</displayName>
-  <version>1.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>moving_average_two</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>moving_average_two</displayName>
+  <displayName>moving_avg</displayName>
   <version>1.0</version>
  </plugin>
  <plugin>
@@ -90192,5 +90184,5 @@ parameters are a RESULT of the module parameters. -->
   <version>18.1</version>
  </plugin>
  <reportVersion>18.1 625</reportVersion>
- <uniqueIdentifier>8C554ACD47120000018BF53D0F15</uniqueIdentifier>
+ <uniqueIdentifier>8C554ACD47120000018C1490644B</uniqueIdentifier>
 </EnsembleReport>

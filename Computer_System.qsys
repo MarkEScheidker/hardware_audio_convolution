@@ -561,7 +561,7 @@
          type = "int";
       }
    }
-   element moving_average_0
+   element moving_avg_0
    {
       datum _sortIndex
       {
@@ -569,7 +569,7 @@
          type = "int";
       }
    }
-   element moving_average_two_0
+   element moving_avg_1
    {
       datum _sortIndex
       {
@@ -982,7 +982,7 @@
   <parameter name="cpuArchRev" value="1" />
   <parameter name="cpuID" value="0" />
   <parameter name="cpuReset" value="false" />
-  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="nios2_floating_point" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /><slave name="moving_average_0" baseAddress="0" addressSpan="1" clockCycleType="VARIABLE" /><slave name="moving_average_two_0" baseAddress="1" addressSpan="1" clockCycleType="VARIABLE" /></info>]]></parameter>
+  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="nios2_floating_point" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /><slave name="moving_avg_0" baseAddress="0" addressSpan="1" clockCycleType="VARIABLE" /><slave name="moving_avg_1" baseAddress="1" addressSpan="1" clockCycleType="VARIABLE" /></info>]]></parameter>
   <parameter name="customInstSlavesSystemInfo_nios_a" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_b" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_c" value="&lt;info/&gt;" />
@@ -1543,16 +1543,8 @@
   <parameter name="vga_clk_en" value="true" />
   <parameter name="video_in_clk_en" value="false" />
  </module>
- <module
-   name="moving_average_0"
-   kind="moving_average"
-   version="1.0"
-   enabled="1" />
- <module
-   name="moving_average_two_0"
-   kind="moving_average_two"
-   version="1.0"
-   enabled="1" />
+ <module name="moving_avg_0" kind="moving_avg" version="1.0" enabled="1" />
+ <module name="moving_avg_1" kind="moving_avg" version="1.0" enabled="1" />
  <connection
    kind="avalon"
    version="18.1"
@@ -2783,8 +2775,8 @@
    kind="nios_custom_instruction"
    version="18.1"
    start="Nios2.custom_instruction_master"
-   end="moving_average_0.nios_custom_instruction_slave">
-  <parameter name="CIName" value="moving_average_0" />
+   end="moving_avg_0.nios_custom_instruction_slave">
+  <parameter name="CIName" value="moving_avg_0" />
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0" />
  </connection>
@@ -2792,8 +2784,8 @@
    kind="nios_custom_instruction"
    version="18.1"
    start="Nios2.custom_instruction_master"
-   end="moving_average_two_0.nios_custom_instruction_slave">
-  <parameter name="CIName">moving_average_two_0</parameter>
+   end="moving_avg_1.nios_custom_instruction_slave">
+  <parameter name="CIName" value="moving_avg_1" />
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="1" />
  </connection>

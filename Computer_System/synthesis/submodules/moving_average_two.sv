@@ -13,8 +13,7 @@ module moving_avg_two_ci(
     reg [31:0] accumulate = 0;
     reg [3:0] pointer = 0;
     reg [1:0]state = 0;
-    reg toggle_ff = 0;  // Toggle flip-flop
-     reg [1:0]clk_counter = 0;
+    reg [1:0]clk_counter = 0;
 
     // Main logic always block
     always @(posedge clk or posedge reset) begin
@@ -38,7 +37,7 @@ module moving_avg_two_ci(
                 accumulate = accumulate + fifo[1];
                 accumulate = accumulate + fifo[2];
                 accumulate = accumulate + fifo[3];
-               accumulate = accumulate + fifo[4];
+                accumulate = accumulate + fifo[4];
                 accumulate = accumulate + fifo[5];
                 accumulate = accumulate + fifo[6];
                 accumulate = accumulate + fifo[7];

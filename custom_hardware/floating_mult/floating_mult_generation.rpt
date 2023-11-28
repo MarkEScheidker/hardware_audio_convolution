@@ -1,0 +1,28 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\intelFPGA_lite\18.1\hardware_audio_convolution\custom_hardware\floating_mult.qsys --block-symbol-file --output-directory=C:\intelFPGA_lite\18.1\hardware_audio_convolution\custom_hardware\floating_mult --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading custom_hardware/floating_mult.qsys
+Progress: Reading input file
+Progress: Adding nios_custom_instr_floating_point_2_multi_0 [altera_nios_custom_instr_floating_point_2_multi 18.1]
+Progress: Parameterizing module nios_custom_instr_floating_point_2_multi_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\intelFPGA_lite\18.1\hardware_audio_convolution\custom_hardware\floating_mult.qsys --synthesis=VERILOG --output-directory=C:\intelFPGA_lite\18.1\hardware_audio_convolution\custom_hardware\floating_mult\synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading custom_hardware/floating_mult.qsys
+Progress: Reading input file
+Progress: Adding nios_custom_instr_floating_point_2_multi_0 [altera_nios_custom_instr_floating_point_2_multi 18.1]
+Progress: Parameterizing module nios_custom_instr_floating_point_2_multi_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: floating_mult: Generating floating_mult "floating_mult" for QUARTUS_SYNTH
+Info: nios_custom_instr_floating_point_2_multi_0: "floating_mult" instantiated altera_nios_custom_instr_floating_point_2_multi "nios_custom_instr_floating_point_2_multi_0"
+Info: floating_mult: Done "floating_mult" with 2 modules, 15 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

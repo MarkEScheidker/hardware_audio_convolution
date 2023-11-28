@@ -1,12 +1,12 @@
 
-State Machine - |DE2_115_Computer|Computer_System:The_System|moving_avg_two_ci:moving_average_two_0|state
+State Machine - |DE2_115_Computer|Computer_System:The_System|moving_avg_ci:moving_avg_1|state
 Name state.11 state.10 state.01 state.00 
 state.00 0 0 0 0 
 state.01 0 0 1 1 
 state.10 0 1 0 1 
 state.11 1 0 0 1 
 
-State Machine - |DE2_115_Computer|Computer_System:The_System|moving_avg_ci:moving_average_0|state
+State Machine - |DE2_115_Computer|Computer_System:The_System|moving_avg_ci:moving_avg_0|state
 Name state.11 state.10 state.01 state.00 
 state.00 0 0 0 0 
 state.01 0 0 1 1 

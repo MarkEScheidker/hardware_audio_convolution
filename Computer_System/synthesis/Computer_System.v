@@ -172,14 +172,14 @@ module Computer_System (
 	wire  [31:0] nios2_custom_instruction_master_multi_xconnect_ci_master1_dataa;                       // Nios2_custom_instruction_master_multi_xconnect:ci_master1_dataa -> Nios2_custom_instruction_master_multi_slave_translator1:ci_slave_dataa
 	wire         nios2_custom_instruction_master_multi_xconnect_ci_master1_reset;                       // Nios2_custom_instruction_master_multi_xconnect:ci_master1_reset -> Nios2_custom_instruction_master_multi_slave_translator1:ci_slave_reset
 	wire         nios2_custom_instruction_master_multi_xconnect_ci_master1_writerc;                     // Nios2_custom_instruction_master_multi_xconnect:ci_master1_writerc -> Nios2_custom_instruction_master_multi_slave_translator1:ci_slave_writerc
-	wire  [31:0] nios2_custom_instruction_master_multi_slave_translator1_ci_master_result;              // moving_average_0:result -> Nios2_custom_instruction_master_multi_slave_translator1:ci_master_result
-	wire         nios2_custom_instruction_master_multi_slave_translator1_ci_master_clk;                 // Nios2_custom_instruction_master_multi_slave_translator1:ci_master_clk -> moving_average_0:clk
-	wire         nios2_custom_instruction_master_multi_slave_translator1_ci_master_clk_en;              // Nios2_custom_instruction_master_multi_slave_translator1:ci_master_clken -> moving_average_0:clk_en
-	wire  [31:0] nios2_custom_instruction_master_multi_slave_translator1_ci_master_datab;               // Nios2_custom_instruction_master_multi_slave_translator1:ci_master_datab -> moving_average_0:datab
-	wire  [31:0] nios2_custom_instruction_master_multi_slave_translator1_ci_master_dataa;               // Nios2_custom_instruction_master_multi_slave_translator1:ci_master_dataa -> moving_average_0:dataa
-	wire         nios2_custom_instruction_master_multi_slave_translator1_ci_master_start;               // Nios2_custom_instruction_master_multi_slave_translator1:ci_master_start -> moving_average_0:start
-	wire         nios2_custom_instruction_master_multi_slave_translator1_ci_master_reset;               // Nios2_custom_instruction_master_multi_slave_translator1:ci_master_reset -> moving_average_0:reset
-	wire         nios2_custom_instruction_master_multi_slave_translator1_ci_master_done;                // moving_average_0:done -> Nios2_custom_instruction_master_multi_slave_translator1:ci_master_done
+	wire  [31:0] nios2_custom_instruction_master_multi_slave_translator1_ci_master_result;              // moving_avg_0:result -> Nios2_custom_instruction_master_multi_slave_translator1:ci_master_result
+	wire         nios2_custom_instruction_master_multi_slave_translator1_ci_master_clk;                 // Nios2_custom_instruction_master_multi_slave_translator1:ci_master_clk -> moving_avg_0:clk
+	wire         nios2_custom_instruction_master_multi_slave_translator1_ci_master_clk_en;              // Nios2_custom_instruction_master_multi_slave_translator1:ci_master_clken -> moving_avg_0:clk_en
+	wire  [31:0] nios2_custom_instruction_master_multi_slave_translator1_ci_master_datab;               // Nios2_custom_instruction_master_multi_slave_translator1:ci_master_datab -> moving_avg_0:datab
+	wire  [31:0] nios2_custom_instruction_master_multi_slave_translator1_ci_master_dataa;               // Nios2_custom_instruction_master_multi_slave_translator1:ci_master_dataa -> moving_avg_0:dataa
+	wire         nios2_custom_instruction_master_multi_slave_translator1_ci_master_start;               // Nios2_custom_instruction_master_multi_slave_translator1:ci_master_start -> moving_avg_0:start
+	wire         nios2_custom_instruction_master_multi_slave_translator1_ci_master_reset;               // Nios2_custom_instruction_master_multi_slave_translator1:ci_master_reset -> moving_avg_0:reset
+	wire         nios2_custom_instruction_master_multi_slave_translator1_ci_master_done;                // moving_avg_0:done -> Nios2_custom_instruction_master_multi_slave_translator1:ci_master_done
 	wire         nios2_custom_instruction_master_multi_xconnect_ci_master2_readra;                      // Nios2_custom_instruction_master_multi_xconnect:ci_master2_readra -> Nios2_custom_instruction_master_multi_slave_translator2:ci_slave_readra
 	wire   [4:0] nios2_custom_instruction_master_multi_xconnect_ci_master2_a;                           // Nios2_custom_instruction_master_multi_xconnect:ci_master2_a -> Nios2_custom_instruction_master_multi_slave_translator2:ci_slave_a
 	wire   [4:0] nios2_custom_instruction_master_multi_xconnect_ci_master2_b;                           // Nios2_custom_instruction_master_multi_xconnect:ci_master2_b -> Nios2_custom_instruction_master_multi_slave_translator2:ci_slave_b
@@ -198,14 +198,14 @@ module Computer_System (
 	wire  [31:0] nios2_custom_instruction_master_multi_xconnect_ci_master2_dataa;                       // Nios2_custom_instruction_master_multi_xconnect:ci_master2_dataa -> Nios2_custom_instruction_master_multi_slave_translator2:ci_slave_dataa
 	wire         nios2_custom_instruction_master_multi_xconnect_ci_master2_reset;                       // Nios2_custom_instruction_master_multi_xconnect:ci_master2_reset -> Nios2_custom_instruction_master_multi_slave_translator2:ci_slave_reset
 	wire         nios2_custom_instruction_master_multi_xconnect_ci_master2_writerc;                     // Nios2_custom_instruction_master_multi_xconnect:ci_master2_writerc -> Nios2_custom_instruction_master_multi_slave_translator2:ci_slave_writerc
-	wire  [31:0] nios2_custom_instruction_master_multi_slave_translator2_ci_master_result;              // moving_average_two_0:result -> Nios2_custom_instruction_master_multi_slave_translator2:ci_master_result
-	wire         nios2_custom_instruction_master_multi_slave_translator2_ci_master_clk;                 // Nios2_custom_instruction_master_multi_slave_translator2:ci_master_clk -> moving_average_two_0:clk
-	wire         nios2_custom_instruction_master_multi_slave_translator2_ci_master_clk_en;              // Nios2_custom_instruction_master_multi_slave_translator2:ci_master_clken -> moving_average_two_0:clk_en
-	wire  [31:0] nios2_custom_instruction_master_multi_slave_translator2_ci_master_datab;               // Nios2_custom_instruction_master_multi_slave_translator2:ci_master_datab -> moving_average_two_0:datab
-	wire  [31:0] nios2_custom_instruction_master_multi_slave_translator2_ci_master_dataa;               // Nios2_custom_instruction_master_multi_slave_translator2:ci_master_dataa -> moving_average_two_0:dataa
-	wire         nios2_custom_instruction_master_multi_slave_translator2_ci_master_start;               // Nios2_custom_instruction_master_multi_slave_translator2:ci_master_start -> moving_average_two_0:start
-	wire         nios2_custom_instruction_master_multi_slave_translator2_ci_master_reset;               // Nios2_custom_instruction_master_multi_slave_translator2:ci_master_reset -> moving_average_two_0:reset
-	wire         nios2_custom_instruction_master_multi_slave_translator2_ci_master_done;                // moving_average_two_0:done -> Nios2_custom_instruction_master_multi_slave_translator2:ci_master_done
+	wire  [31:0] nios2_custom_instruction_master_multi_slave_translator2_ci_master_result;              // moving_avg_1:result -> Nios2_custom_instruction_master_multi_slave_translator2:ci_master_result
+	wire         nios2_custom_instruction_master_multi_slave_translator2_ci_master_clk;                 // Nios2_custom_instruction_master_multi_slave_translator2:ci_master_clk -> moving_avg_1:clk
+	wire         nios2_custom_instruction_master_multi_slave_translator2_ci_master_clk_en;              // Nios2_custom_instruction_master_multi_slave_translator2:ci_master_clken -> moving_avg_1:clk_en
+	wire  [31:0] nios2_custom_instruction_master_multi_slave_translator2_ci_master_datab;               // Nios2_custom_instruction_master_multi_slave_translator2:ci_master_datab -> moving_avg_1:datab
+	wire  [31:0] nios2_custom_instruction_master_multi_slave_translator2_ci_master_dataa;               // Nios2_custom_instruction_master_multi_slave_translator2:ci_master_dataa -> moving_avg_1:dataa
+	wire         nios2_custom_instruction_master_multi_slave_translator2_ci_master_start;               // Nios2_custom_instruction_master_multi_slave_translator2:ci_master_start -> moving_avg_1:start
+	wire         nios2_custom_instruction_master_multi_slave_translator2_ci_master_reset;               // Nios2_custom_instruction_master_multi_slave_translator2:ci_master_reset -> moving_avg_1:reset
+	wire         nios2_custom_instruction_master_multi_slave_translator2_ci_master_done;                // moving_avg_1:done -> Nios2_custom_instruction_master_multi_slave_translator2:ci_master_done
 	wire  [31:0] nios2_2nd_core_custom_instruction_master_multi_dataa;                                  // Nios2_2nd_Core:A_ci_multi_dataa -> Nios2_2nd_Core_custom_instruction_master_translator:ci_slave_multi_dataa
 	wire         nios2_2nd_core_custom_instruction_master_multi_writerc;                                // Nios2_2nd_Core:A_ci_multi_writerc -> Nios2_2nd_Core_custom_instruction_master_translator:ci_slave_multi_writerc
 	wire  [31:0] nios2_2nd_core_custom_instruction_master_multi_result;                                 // Nios2_2nd_Core_custom_instruction_master_translator:ci_slave_multi_result -> Nios2_2nd_Core:A_ci_multi_result
@@ -1135,7 +1135,7 @@ module Computer_System (
 		.reset_source_reset (video_pll_reset_source_reset)  // reset_source.reset
 	);
 
-	moving_avg_ci moving_average_0 (
+	moving_avg_ci moving_avg_0 (
 		.clk_en (nios2_custom_instruction_master_multi_slave_translator1_ci_master_clk_en), // nios_custom_instruction_slave.clk_en
 		.dataa  (nios2_custom_instruction_master_multi_slave_translator1_ci_master_dataa),  //                              .dataa
 		.datab  (nios2_custom_instruction_master_multi_slave_translator1_ci_master_datab),  //                              .datab
@@ -1146,7 +1146,7 @@ module Computer_System (
 		.reset  (nios2_custom_instruction_master_multi_slave_translator1_ci_master_reset)   //                              .reset
 	);
 
-	moving_avg_two_ci moving_average_two_0 (
+	moving_avg_ci moving_avg_1 (
 		.clk_en (nios2_custom_instruction_master_multi_slave_translator2_ci_master_clk_en), // nios_custom_instruction_slave.clk_en
 		.dataa  (nios2_custom_instruction_master_multi_slave_translator2_ci_master_dataa),  //                              .dataa
 		.datab  (nios2_custom_instruction_master_multi_slave_translator2_ci_master_datab),  //                              .datab

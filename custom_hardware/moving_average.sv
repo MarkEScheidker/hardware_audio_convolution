@@ -9,12 +9,11 @@ module moving_avg_ci(
     output reg done                // operation is completed
 );
 
-    reg [31:0] fifo[0:15];
+    reg [31:0] fifo[0:31];
     reg [31:0] accumulate = 0;
-    reg [3:0] pointer = 0;
+    reg [4:0] pointer = 0;
     reg [1:0]state = 0;
-    reg toggle_ff = 0;  // Toggle flip-flop
-     reg [1:0]clk_counter = 0;
+    reg [5:0] i; // Loop index
 
     // Main logic always block
     always @(posedge clk or posedge reset) begin
@@ -32,35 +31,25 @@ module moving_avg_ci(
             pointer <= pointer + 1; // Wrap around the pointer
             state <= 1;
         end
-          else if (state == 1 & clk_en) begin
-                accumulate = 0;
-                accumulate = accumulate + fifo[0];
-                accumulate = accumulate + fifo[1];
-                accumulate = accumulate + fifo[2];
-                accumulate = accumulate + fifo[3];
-               accumulate = accumulate + fifo[4];
-                accumulate = accumulate + fifo[5];
-                accumulate = accumulate + fifo[6];
-                accumulate = accumulate + fifo[7];
-                accumulate = accumulate + fifo[8];
-                accumulate = accumulate + fifo[9];
-                state <= 2;
-          end
-        else if (state == 2 & clk_en) begin
-                accumulate = accumulate + fifo[10];
-                accumulate = accumulate + fifo[11];
-                accumulate = accumulate + fifo[12];
-                accumulate = accumulate + fifo[13];
-                accumulate = accumulate + fifo[14];
-                accumulate = accumulate + fifo[15];
-                result = accumulate >> 4;
-                result[31:16] = 16'b0;
-                done <= 1;
-                state <= 3;
+        else if (state == 1 & clk_en) begin
+            accumulate = 0;
+            for (i = 0; i < 16; i = i + 1) begin
+                accumulate = accumulate + fifo[i];
             end
-         else begin
-                state <= 0;
-                done <= 0;
-         end
-      end
+            state <= 2;
+        end
+        else if (state == 2 & clk_en) begin
+            for (i = 16; i < 32; i = i + 1) begin
+                accumulate = accumulate + fifo[i];
+            end
+            result = accumulate >> 5; // Dividing by 32
+            result[31:16] = 16'b0;
+            done <= 1;
+            state <= 3;
+        end
+        else begin
+            state <= 0;
+            done <= 0;
+        end
+    end
 endmodule
